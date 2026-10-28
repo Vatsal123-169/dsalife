@@ -2,7 +2,8 @@ class Solution
 {
     public int maxProfit(int[] prices) 
     {
-        int buy,sell=0;
+        int buy=0;
+        int sell=0;
         int best=0;
         for(int i=0;i<prices.length;i++)
         {
@@ -10,7 +11,7 @@ class Solution
             if(prices[i]-prices[buy]>best)
             {
                 sell=i;
-                best=arr[i]-arr[buy];
+                best=prices [i]-prices[buy];
             }
         }
         return best;
