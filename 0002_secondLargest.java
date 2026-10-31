@@ -11,14 +11,11 @@ class Solution {
                 l=arr[i];
             }
         }
-      
         int sl=-1;
         for(int j=0;j<arr.length;j++)
         {
-          
          if(arr[j]>sl&&arr[j]!=l)   
          sl=arr[j];
-        
         }
         return sl;
     }
